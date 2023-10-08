@@ -16,6 +16,5 @@ bot.on("message", (ctx) => {
     inlineKeyboard
   );
 });
-Telegram.setWebhook("todo-topia-bot.vercel.app");
 
 bot.launch();
