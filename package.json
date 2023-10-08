@@ -1,12 +1,21 @@
 {
   "name": "todo-topia-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Silver",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.4.1",
+    "dotenv": "^16.3.1",
+    "telegraf": "^4.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prisma": "^5.4.1"
+  }
 }
