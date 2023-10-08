@@ -17,4 +17,8 @@ bot.on("message", (ctx) => {
   );
 });
 
+Telegram.setWebhook(
+  "https://todo-topia-bot-git-main-alirezaghorbani79.vercel.app"
+);
+
 bot.launch();
