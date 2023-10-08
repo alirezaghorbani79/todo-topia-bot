@@ -1,4 +1,4 @@
-const { Telegraf, Markup } = require("telegraf");
+const { Telegraf, Markup, Telegram } = require("telegraf");
 require("dotenv").config();
 
 const bot = new Telegraf(process.env.BOT_API_TOKEN);
@@ -16,5 +16,6 @@ bot.on("message", (ctx) => {
     inlineKeyboard
   );
 });
+Telegram.setWebhook("todo-topia-bot.vercel.app");
 
 bot.launch();
