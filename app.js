@@ -1,14 +1,11 @@
-const { Telegraf, Markup, Telegram } = require("telegraf");
+const { Telegraf, Markup } = require("telegraf");
 require("dotenv").config();
 
 const bot = new Telegraf(process.env.BOT_API_TOKEN);
 
 bot.on("message", (ctx) => {
   const inlineKeyboard = Markup.inlineKeyboard([
-    Markup.button.webApp(
-      "Open TodoTopia",
-      "https://open-evolving-seal.ngrok-free.app"
-    ),
+    Markup.button.webApp("Open Todo Topia", process.env.WEB_APP_URL),
   ]);
 
   ctx.reply(
