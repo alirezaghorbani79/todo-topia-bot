@@ -2,6 +2,7 @@ const { Telegraf, Markup, Telegram } = require("telegraf");
 require("dotenv").config();
 
 const bot = new Telegraf(process.env.BOT_API_TOKEN);
+console.log("TOKEN:", process.env.BOT_API_TOKEN);
 
 bot.on("message", (ctx) => {
   const inlineKeyboard = Markup.inlineKeyboard([
