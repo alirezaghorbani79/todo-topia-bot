@@ -1,4 +1,4 @@
-# Telegram Bot for Task Management
+# Todo Topia bot script
 
 This is a bot script for the Todo Topia Mini App. The source code for the Todo Topia Mini App is available in the [Todo Topia repository](https://github.com/ArianHamdi/todo-topia).
 
