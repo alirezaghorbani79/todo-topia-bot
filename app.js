@@ -13,5 +13,8 @@ bot.on("message", (ctx) => {
     inlineKeyboard
   );
 });
+bot.catch((err, ctx) => {
+  console.log(err);
+});
 
 bot.launch();
